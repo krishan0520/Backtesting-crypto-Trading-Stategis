@@ -1,2 +1,20 @@
 2025-02-15 22:55:34,333 INFO :: This is an info message
 2025-02-15 22:56:14,104 DEBUG :: This is an debug message
+2025-02-16 22:06:47,464 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-02-16 22:06:47,998 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-02-16 22:06:48,004 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-02-16 22:06:48,299 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-02-16 22:09:35,257 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-02-16 22:09:42,447 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-02-16 22:09:42,453 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-02-16 22:09:42,731 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-02-17 17:35:47,660 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-02-17 17:35:47,977 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-02-18 08:36:51,393 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-02-18 08:36:51,727 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-02-18 08:36:51,794 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-02-18 08:36:52,083 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500 HTTP/1.1" 200 None
+2025-02-18 08:38:07,743 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-02-18 08:38:09,292 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-02-18 08:38:09,517 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-02-18 08:38:10,255 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500 HTTP/1.1" 200 None

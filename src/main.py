@@ -17,6 +17,8 @@ Usage:
 
 from exchage.binance import BinannceClient
 
+from exchage.crypto_com import CryptocomClient
+
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
@@ -30,13 +32,32 @@ file_handler = logging.FileHandler('info.log')
 file_handler.setFormatter(formatter)
 file_handler.setLevel(logging.DEBUG)
 
+
 logger.addHandler(stream_handler)
 logger.addHandler(file_handler)
 
 if __name__=='__main__':
 
     mode = input("Chose the program mode (data/backtest/optimize): ").lower()
-    
-    client = BinannceClient(True)
 
-    print(client.get_historical_data("BTCUSDT"))
+    while True:
+
+       exchage = input("Chose the exchage (binance/crypto_com): ").lower()
+       if exchage in ("binance","crypto_com"):
+           break
+       
+    if exchage == "binance":
+        client = BinannceClient(True)
+        print(client.get_historical_data("BTCUSDT"))
+        print(len(client.get_historical_data("BTCUSDT")))
+
+    elif exchage == "crypto_com":
+        client = CryptocomClient()
+        print(client.get_historical_data("BTC_USDT","1m"))
+        print(len(client.get_historical_data("BTC_USDT","1m")))
+
+
+    
+
+
+    

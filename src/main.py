@@ -19,6 +19,8 @@ from exchage.binance import BinannceClient
 
 from exchage.crypto_com import CryptocomClient
 
+from data_collection import all_data
+
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
@@ -42,19 +44,28 @@ if __name__=='__main__':
 
     while True:
 
-       exchage = input("Chose the exchage (binance/crypto_com): ").lower()
-       if exchage in ("binance","crypto_com"):
+       exchange = input("Chose the exchange (binance/crypto_com): ").lower()
+       if exchange in ("binance","crypto_com"):
            break
        
-    if exchage == "binance":
+    if exchange == "binance":
         client = BinannceClient(True)
-        print(client.get_historical_data("BTCUSDT"))
-        print(len(client.get_historical_data("BTCUSDT")))
 
-    elif exchage == "crypto_com":
+    elif exchange == "crypto_com":
         client = CryptocomClient()
-        print(client.get_historical_data("BTC_USDT","1m"))
-        print(len(client.get_historical_data("BTC_USDT","1m")))
+
+
+    while True:
+
+        symbol = input("Enter symbol:").upper()
+
+        if symbol in client.symbols:
+            break 
+    
+    if mode == "data":
+        all_data(client,exchange,symbol)
+    
+    
 
 
     

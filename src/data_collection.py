@@ -29,10 +29,79 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
             logger.info("%s %s: Collected %s intial data from %s to %s ", exchange,symbol,len(data),ms_to_dt(data[0][0]),ms_to_dt(data[-1][0]))
 
 
+        
+        oldest_ts = data[0][0]
+        most_ts = data[-1][0]
+
+
+
+        #Most recent data
+
+    while True:
+
+
+       data = client.get_historical_data(symbol,start_time= int(most_ts + 60000))
+
+       if data is None:
+           time.sleep(4) #pause in case error occurs during the request
+
+       if len(data)<2:
+           break
+
+           continue
+       
+       data = data[:-1]
+       
+       if data[-1][0]>most_ts:
+        most_ts = data[-1][0]
+
+        logger.info("%s %s: Collected  %s recent data from %s to %s ", exchange,symbol,len(data),ms_to_dt(data[0][0]),ms_to_dt(data[-1][0]))
+
+
+        time.sleep(1.1)
+
+
+    #older data
+
+    while True:
+
+
+        data = client.get_historical_data(symbol,end_time=int(oldest_ts - 60000))
+
+        if data is None:
+           time.sleep(4) #pause in case error occurs during the request
+
+        if len(data) == 0:
+           
+           logger.info("%s %s Stopped older data collection beacause no data was found before %s",exchange,symbol,ms_to_dt(oldest_ts))
+           break
+
+           continue
+       
+
+       
+        if data[0][0]<oldest_ts:
+           oldest_ts = data[0][0]
+
+           logger.info("%s %s: Collected  %s older data from %s to %s ", exchange,symbol,len(data),ms_to_dt(data[0][0]),ms_to_dt(data[-1][0]))
+
+
+        time.sleep(1.1)
+
+
+    
+       
+
+
+
+
+
+
+
 
 
 
 
 
     
-    pass
+    

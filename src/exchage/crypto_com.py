@@ -47,10 +47,10 @@ class CryptocomClient:
         else:
             symbols = []
 
-    def get_historical_data(self,symbol:str,timeframe:str,start:Optional[int]=None,end:Optional[int]=None,count:Optional[int]=None):
+    def get_historical_data(self,symbol:str,start_time:Optional[int]=None,end_time:Optional[int]=None,count:Optional[int]=None):
         params = dict()
         params["instrument_name"] = symbol
-        params["timeframe"] = timeframe
+        params["timeframe"] = 'M1'
 
 
 
@@ -58,10 +58,10 @@ class CryptocomClient:
             logger.error("Symbol %s is not available",symbol)
             return None 
         
-        if start is not None:
-            params["start_ts"] = start
-        if end is not None:
-            params["start_ts"] = end
+        if start_time is not None:
+            params["start_ts"] = start_time
+        if end_time is not None:
+            params["end_ts"] = end_time
         if count is not None:
             params["count"] = count
 

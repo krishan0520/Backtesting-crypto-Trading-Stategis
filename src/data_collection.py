@@ -91,7 +91,7 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
 
            logger.info("%s %s: Collected  %s older data from %s to %s ", exchange,symbol,len(data),ms_to_dt(data[0][0]),ms_to_dt(data[-1][0]))
 
-        time.sleep(1.1)
+           time.sleep(1.1)
 
 
           

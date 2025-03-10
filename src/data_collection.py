@@ -17,7 +17,9 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
     hf5_db = Hdf5Client(exchange)
     hf5_db.create_datasets(symbol)
 
-    oldest_ts,most_ts = None,None
+    oldest_ts,most_ts = hf5_db.get_first_last_timestamp(symbol)
+    print(oldest_ts,most_ts)
+
 
     #inital request
 
@@ -62,7 +64,8 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
         
 
         logger.info("%s %s: Collected  %s recent data from %s to %s ", exchange,symbol,len(data),ms_to_dt(data[0][0]),ms_to_dt(data[-1][0]))
-
+        
+        hf5_db.write_data(symbol,data)
 
         time.sleep(1.1)
 
@@ -90,6 +93,8 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
            oldest_ts = data[0][0]
 
            logger.info("%s %s: Collected  %s older data from %s to %s ", exchange,symbol,len(data),ms_to_dt(data[0][0]),ms_to_dt(data[-1][0]))
+
+           hf5_db.write_data(symbol,data)
 
            time.sleep(1.1)
 

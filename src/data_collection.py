@@ -17,6 +17,8 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
     hf5_db = Hdf5Client(exchange)
     hf5_db.create_datasets(symbol)
 
+
+
     oldest_ts,most_ts = hf5_db.get_first_last_timestamp(symbol)
     print(oldest_ts,most_ts)
 
@@ -40,6 +42,8 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
         most_ts = data[-1][0]
 
         hf5_db.write_data(symbol,data)
+    
+    data_to_insert = []
 
 
 
@@ -58,6 +62,13 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
 
        
        data = data[:-1]
+
+       data_to_insert = data_to_insert + data
+
+       if len(data_to_insert)>10000:
+           hf5_db.write_data(symbol,data_to_insert)
+           data_to_insert.clear()
+           
        
        if data[-1][0]>most_ts:
         most_ts = data[-1][0]
@@ -65,9 +76,11 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
 
         logger.info("%s %s: Collected  %s recent data from %s to %s ", exchange,symbol,len(data),ms_to_dt(data[0][0]),ms_to_dt(data[-1][0]))
         
-        hf5_db.write_data(symbol,data)
+        
 
         time.sleep(1.1)
+    hf5_db.write_data(symbol,data_to_insert)
+    data_to_insert.clear()
 
 
     #older data
@@ -86,7 +99,11 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
            break
 
            
-       
+        data_to_insert = data_to_insert + data
+
+        if len(data_to_insert)>10000:
+            hf5_db.write_data(symbol,data_to_insert)
+            data_to_insert.clear()
 
        
         if data[0][0]<oldest_ts:
@@ -94,11 +111,12 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
 
            logger.info("%s %s: Collected  %s older data from %s to %s ", exchange,symbol,len(data),ms_to_dt(data[0][0]),ms_to_dt(data[-1][0]))
 
-           hf5_db.write_data(symbol,data)
+
 
            time.sleep(1.1)
 
-
+    hf5_db.write_data(symbol,data_to_insert)
+    data_to_insert.clear()
           
 
 

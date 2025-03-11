@@ -5534,3 +5534,149 @@
 2025-03-11 10:48:49,451 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1737189900000 HTTP/1.1" 200 None
 2025-03-11 10:48:49,487 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-17 07:46:00+00:00 to 2025-01-18 08:45:00+00:00 
 2025-03-11 10:48:50,618 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 10:59:47,130 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 10:59:47,516 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-03-11 10:59:52,178 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 10:59:52,550 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&startTime=1741689960000 HTTP/1.1" 200 None
+2025-03-11 10:59:52,551 INFO :: binance BTCUSDT: Collected  13 recent data from 2025-03-11 10:46:00+00:00 to 2025-03-11 10:58:00+00:00 
+2025-03-11 10:59:53,655 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 10:59:53,988 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&startTime=1741690740000 HTTP/1.1" 200 None
+2025-03-11 10:59:54,020 ERROR :: BTCUSDT :data shape mismatch! Expectd (None, 6), but got (13, 13, 6)
+2025-03-11 10:59:54,021 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 10:59:54,356 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1737099900000 HTTP/1.1" 200 None
+2025-03-11 10:59:54,586 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-16 06:46:00+00:00 to 2025-01-17 07:45:00+00:00 
+2025-03-11 10:59:55,689 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 10:59:56,029 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1737009900000 HTTP/1.1" 200 None
+2025-03-11 10:59:56,064 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-15 05:46:00+00:00 to 2025-01-16 06:45:00+00:00 
+2025-03-11 10:59:57,167 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 10:59:57,528 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1736919900000 HTTP/1.1" 200 None
+2025-03-11 10:59:57,566 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-14 04:46:00+00:00 to 2025-01-15 05:45:00+00:00 
+2025-03-11 10:59:58,667 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 10:59:59,002 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1736829900000 HTTP/1.1" 200 None
+2025-03-11 10:59:59,040 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-13 03:46:00+00:00 to 2025-01-14 04:45:00+00:00 
+2025-03-11 11:00:00,143 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:00,477 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1736739900000 HTTP/1.1" 200 None
+2025-03-11 11:00:00,516 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-12 02:46:00+00:00 to 2025-01-13 03:45:00+00:00 
+2025-03-11 11:00:01,619 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:01,987 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1736649900000 HTTP/1.1" 200 None
+2025-03-11 11:00:02,019 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-11 01:46:00+00:00 to 2025-01-12 02:45:00+00:00 
+2025-03-11 11:00:03,122 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:03,483 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1736559900000 HTTP/1.1" 200 None
+2025-03-11 11:00:03,550 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-10 00:46:00+00:00 to 2025-01-11 01:45:00+00:00 
+2025-03-11 11:00:04,653 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:04,990 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1736469900000 HTTP/1.1" 200 None
+2025-03-11 11:00:05,027 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-08 23:46:00+00:00 to 2025-01-10 00:45:00+00:00 
+2025-03-11 11:00:06,130 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:06,475 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1736379900000 HTTP/1.1" 200 None
+2025-03-11 11:00:06,516 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-07 22:46:00+00:00 to 2025-01-08 23:45:00+00:00 
+2025-03-11 11:00:07,619 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:07,979 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1736289900000 HTTP/1.1" 200 None
+2025-03-11 11:00:08,026 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-06 21:46:00+00:00 to 2025-01-07 22:45:00+00:00 
+2025-03-11 11:00:09,129 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:09,476 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1736199900000 HTTP/1.1" 200 None
+2025-03-11 11:00:09,513 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-05 20:46:00+00:00 to 2025-01-06 21:45:00+00:00 
+2025-03-11 11:00:10,615 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:10,966 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1736109900000 HTTP/1.1" 200 None
+2025-03-11 11:00:11,003 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-04 19:46:00+00:00 to 2025-01-05 20:45:00+00:00 
+2025-03-11 11:00:12,106 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:12,455 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1736019900000 HTTP/1.1" 200 None
+2025-03-11 11:00:12,493 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-03 18:46:00+00:00 to 2025-01-04 19:45:00+00:00 
+2025-03-11 11:00:13,596 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:13,949 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735929900000 HTTP/1.1" 200 None
+2025-03-11 11:00:14,024 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-02 17:46:00+00:00 to 2025-01-03 18:45:00+00:00 
+2025-03-11 11:00:15,127 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:15,466 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735839900000 HTTP/1.1" 200 None
+2025-03-11 11:00:15,500 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-01 16:46:00+00:00 to 2025-01-02 17:45:00+00:00 
+2025-03-11 11:00:16,603 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:16,951 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735749900000 HTTP/1.1" 200 None
+2025-03-11 11:00:17,175 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-31 15:46:00+00:00 to 2025-01-01 16:45:00+00:00 
+2025-03-11 11:00:18,279 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:18,623 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735659900000 HTTP/1.1" 200 None
+2025-03-11 11:00:18,666 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-30 14:46:00+00:00 to 2024-12-31 15:45:00+00:00 
+2025-03-11 11:00:19,768 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:20,113 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735569900000 HTTP/1.1" 200 None
+2025-03-11 11:00:20,152 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-29 13:46:00+00:00 to 2024-12-30 14:45:00+00:00 
+2025-03-11 11:00:21,253 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:21,582 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735479900000 HTTP/1.1" 200 None
+2025-03-11 11:00:21,615 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-28 12:46:00+00:00 to 2024-12-29 13:45:00+00:00 
+2025-03-11 11:00:22,717 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:00:23,068 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735389900000 HTTP/1.1" 200 None
+2025-03-11 11:00:23,109 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-27 11:46:00+00:00 to 2024-12-28 12:45:00+00:00 
+2025-03-11 11:00:24,211 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:02,314 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:02,711 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-03-11 11:13:06,529 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:06,942 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&startTime=1741689960000 HTTP/1.1" 200 None
+2025-03-11 11:13:06,944 INFO :: binance BTCUSDT: Collected  27 recent data from 2025-03-11 10:46:00+00:00 to 2025-03-11 11:12:00+00:00 
+2025-03-11 11:13:08,047 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:08,735 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&startTime=1741691580000 HTTP/1.1" 200 None
+2025-03-11 11:13:08,775 ERROR :: BTCUSDT :data shape mismatch! Expectd (None, 6), but got (27, 27, 6)
+2025-03-11 11:13:08,776 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:09,114 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735839900000 HTTP/1.1" 200 None
+2025-03-11 11:13:09,152 INFO :: binance BTCUSDT: Collected  1500 older data from 2025-01-01 16:46:00+00:00 to 2025-01-02 17:45:00+00:00 
+2025-03-11 11:13:10,255 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:10,613 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735749900000 HTTP/1.1" 200 None
+2025-03-11 11:13:10,652 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-31 15:46:00+00:00 to 2025-01-01 16:45:00+00:00 
+2025-03-11 11:13:11,755 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:12,141 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735659900000 HTTP/1.1" 200 None
+2025-03-11 11:13:12,178 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-30 14:46:00+00:00 to 2024-12-31 15:45:00+00:00 
+2025-03-11 11:13:13,281 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:13,635 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735569900000 HTTP/1.1" 200 None
+2025-03-11 11:13:13,670 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-29 13:46:00+00:00 to 2024-12-30 14:45:00+00:00 
+2025-03-11 11:13:14,772 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:15,110 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735479900000 HTTP/1.1" 200 None
+2025-03-11 11:13:15,143 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-28 12:46:00+00:00 to 2024-12-29 13:45:00+00:00 
+2025-03-11 11:13:16,246 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:16,593 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735389900000 HTTP/1.1" 200 None
+2025-03-11 11:13:16,630 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-27 11:46:00+00:00 to 2024-12-28 12:45:00+00:00 
+2025-03-11 11:13:17,733 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:18,105 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735299900000 HTTP/1.1" 200 None
+2025-03-11 11:13:18,185 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-26 10:46:00+00:00 to 2024-12-27 11:45:00+00:00 
+2025-03-11 11:13:19,286 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:19,617 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735209900000 HTTP/1.1" 200 None
+2025-03-11 11:13:19,648 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-25 09:46:00+00:00 to 2024-12-26 10:45:00+00:00 
+2025-03-11 11:13:20,749 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:21,091 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735119900000 HTTP/1.1" 200 None
+2025-03-11 11:13:21,124 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-24 08:46:00+00:00 to 2024-12-25 09:45:00+00:00 
+2025-03-11 11:13:22,225 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:22,563 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1735029900000 HTTP/1.1" 200 None
+2025-03-11 11:13:22,599 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-23 07:46:00+00:00 to 2024-12-24 08:45:00+00:00 
+2025-03-11 11:13:23,701 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:24,081 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1734939900000 HTTP/1.1" 200 None
+2025-03-11 11:13:24,117 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-22 06:46:00+00:00 to 2024-12-23 07:45:00+00:00 
+2025-03-11 11:13:25,220 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:25,571 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1734849900000 HTTP/1.1" 200 None
+2025-03-11 11:13:25,606 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-21 05:46:00+00:00 to 2024-12-22 06:45:00+00:00 
+2025-03-11 11:13:26,709 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:27,047 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1734759900000 HTTP/1.1" 200 None
+2025-03-11 11:13:27,086 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-20 04:46:00+00:00 to 2024-12-21 05:45:00+00:00 
+2025-03-11 11:13:28,189 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:28,535 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1734669900000 HTTP/1.1" 200 None
+2025-03-11 11:13:28,619 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-19 03:46:00+00:00 to 2024-12-20 04:45:00+00:00 
+2025-03-11 11:13:29,722 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:30,106 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1734579900000 HTTP/1.1" 200 None
+2025-03-11 11:13:30,144 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-18 02:46:00+00:00 to 2024-12-19 03:45:00+00:00 
+2025-03-11 11:13:31,247 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:31,591 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1734489900000 HTTP/1.1" 200 None
+2025-03-11 11:13:31,633 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-17 01:46:00+00:00 to 2024-12-18 02:45:00+00:00 
+2025-03-11 11:13:32,736 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:33,074 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1734399900000 HTTP/1.1" 200 None
+2025-03-11 11:13:33,110 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-16 00:46:00+00:00 to 2024-12-17 01:45:00+00:00 
+2025-03-11 11:13:34,213 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:34,564 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1734309900000 HTTP/1.1" 200 None
+2025-03-11 11:13:34,601 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-14 23:46:00+00:00 to 2024-12-16 00:45:00+00:00 
+2025-03-11 11:13:35,704 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:36,060 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1734219900000 HTTP/1.1" 200 None
+2025-03-11 11:13:36,100 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-13 22:46:00+00:00 to 2024-12-14 23:45:00+00:00 
+2025-03-11 11:13:37,203 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:37,553 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1734129900000 HTTP/1.1" 200 None
+2025-03-11 11:13:37,593 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-12 21:46:00+00:00 to 2024-12-13 22:45:00+00:00 
+2025-03-11 11:13:38,694 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:13:39,040 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/klines?symbol=BTCUSDT&interval=1m&limit=1500&endTime=1734039900000 HTTP/1.1" 200 None
+2025-03-11 11:13:39,129 INFO :: binance BTCUSDT: Collected  1500 older data from 2024-12-11 20:46:00+00:00 to 2024-12-12 21:45:00+00:00 
+2025-03-11 11:14:26,058 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:14:27,203 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-03-11 11:14:31,538 INFO :: Retrived 129000 BTCUSDT data from database in (0.06394195556640625, 2) seconds
+2025-03-11 11:17:40,138 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-11 11:17:40,530 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-03-11 11:17:44,575 INFO :: Retrived 129000 BTCUSDT data from database in (0.06230759620666504, 2) seconds

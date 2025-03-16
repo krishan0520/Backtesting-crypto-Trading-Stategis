@@ -21,6 +21,12 @@ from exchage.crypto_com import CryptocomClient
 
 from data_collection import all_data
 
+from utils import*
+
+import datetime
+
+import backtester
+
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
@@ -64,6 +70,62 @@ if __name__=='__main__':
     
     if mode == "data":
         all_data(client,exchange,symbol)
+
+    elif mode == "backtest":
+
+        avialble_strategies = ["obv"]
+
+        while True:
+
+            strategy = input(f"Chose the strategy: (', '.join(avialble_strategies))").lower()
+            if strategy in avialble_strategies:
+                break
+
+        #Timeframe
+
+        while True:
+
+            tf = input(f"Chose a timeframe: ({', '.join(TF_EQ.keys())})").lower()
+            if tf in TF_EQ.keys():
+                break
+ 
+
+        #From time
+        
+        while True:
+
+            from_time = input("Backtest from (yyyy-mm-dd or press enter )")
+            if from_time == "":
+                from_time= 0
+                break
+
+            try:
+
+                from_time = int(datetime.datetime.strftime(from_time , "%Y-%m-%d").timestamp()*1000)
+                break
+            except ValueError:
+                
+                continue
+     #To time
+
+        while True:
+
+            to_time = input("Backtest to (yyyy-mm-dd or press enter )")
+            if to_time == "":
+                to_time= int(datetime.datetime.now().timestamp()*1000)
+                break
+
+            try:
+
+                to_time = int(datetime.datetime.strftime(to_time , "%Y-%m-%d").timestamp()*1000)
+                break
+            except ValueError:
+                
+                continue
+        
+        
+
+        backtester.run()
     
     
 

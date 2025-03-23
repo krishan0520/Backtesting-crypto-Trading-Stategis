@@ -18,7 +18,7 @@ def all_data(client:Union[BinannceClient,CryptocomClient],exchange:str,symbol:st
     hf5_db.create_datasets(symbol)
 
 
-
+  
 
 
     oldest_ts,most_ts = hf5_db.get_first_last_timestamp(symbol)

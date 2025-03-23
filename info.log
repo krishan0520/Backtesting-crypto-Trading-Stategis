@@ -5680,3 +5680,13 @@
 2025-03-11 11:17:40,138 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
 2025-03-11 11:17:40,530 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
 2025-03-11 11:17:44,575 INFO :: Retrived 129000 BTCUSDT data from database in (0.06230759620666504, 2) seconds
+2025-03-17 13:17:35,163 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-17 13:17:35,559 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-03-17 13:20:50,280 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-17 13:20:50,659 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-03-17 13:21:58,856 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-17 13:21:59,252 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-03-17 22:13:57,034 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-17 22:13:57,419 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-03-17 22:14:47,905 DEBUG :: Starting new HTTPS connection (1): fapi.binance.com:443
+2025-03-17 22:14:48,298 DEBUG :: https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None

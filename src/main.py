@@ -125,7 +125,7 @@ if __name__=='__main__':
         
         
 
-        backtester.run(exchange,strategy,tf,from_time,to_time)
+        backtester.run(exchange,strategy,symbol,tf,from_time,to_time)
     
     
 

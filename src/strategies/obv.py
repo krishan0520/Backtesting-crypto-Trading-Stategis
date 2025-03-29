@@ -15,8 +15,9 @@ def backtest(df:pd.DataFrame,ma_period:int):
     df["signal"] = np.where(df["obv"]>df["obv_ma"],1,-1)
     df["pnl"] = df["close"].pct_change()*df["signal"].shift(1)
 
+    return df['pnl'].sum()
 
-    print(df)
+
     
 
 

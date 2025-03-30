@@ -73,7 +73,7 @@ if __name__=='__main__':
 
     elif mode == "backtest":
 
-        avialble_strategies = ["obv","ichmoku"]
+        avialble_strategies = ["obv","ichmoku","sup_res"]
 
         while True:
 

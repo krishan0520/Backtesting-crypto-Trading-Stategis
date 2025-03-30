@@ -22,7 +22,7 @@ def run(exchange:str,strategy:str,symbol:str,tf:str,from_time:int,to_time:int):
         data =h5_db.get_data(symbol,from_time,to_time)
         data = resample_timeframe(data,tf)
 
-        strategies.ichmoku.backtest(data,tenkan_period=9,kijun_period=26)
+        print(strategies.ichmoku.backtest(data,tenkan_period=9,kijun_period=26))
 
 
 

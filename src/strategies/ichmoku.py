@@ -50,5 +50,35 @@ def backtest(df :pd.DataFrame,tenkan_period:int,kijun_period:int):
 
     df["chinku_span"] = df["close"].shift(kijun_period)
 
+    df.dropna(inplace=True)
 
-    print(df)
+
+
+
+    #signal
+
+    df["tenkan_minus_kijun"] = df["tenkan_sen"] - df["kijun_sen"]
+    df["prev_tenkan_minus_kijun"] = df["tenkan_minus_kijun"].shift(1)
+
+    df["signal"] = np.where((df["tenkan_minus_kijun"]>0) & 
+                             (df["prev_tenkan_minus_kijun"] <0 ) &
+                            (df["close"]>df["senkou_span_a"]) &
+                            (df["close"]>df["senkou_span_b"]) &
+                            (df["close"]>df["chinku_span"]),1,
+                            
+                            np.where((df["tenkan_minus_kijun"]<0) & 
+                             (df["prev_tenkan_minus_kijun"] >0 ) &
+                            (df["close"]<df["senkou_span_a"]) &
+                            (df["close"]<df["senkou_span_b"]) &
+                            (df["close"]<df["chinku_span"]),-1,0))
+
+    
+    #only incl7uding 1 or -1 as signal data removing 0 which has no decion
+
+    signal_data = df[df["signal"] !=0].copy()
+
+    signal_data["pnl"] = signal_data["close"].pct_change()*signal_data["signal"].shift(1)
+
+    return signal_data["pnl"].sum()
+
+

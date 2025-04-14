@@ -43,11 +43,6 @@ def backtest(df :pd.DataFrame,min_point:int,min_diff_point :int ,rounding_num:fl
 
                     grp["last"] = index
 
-
-
-
-
-
             else:
                 price_group[side][row["rounded_" + h_l]] = {"price":[row[ h_l]] , "start_time":index,"last":index}
                 

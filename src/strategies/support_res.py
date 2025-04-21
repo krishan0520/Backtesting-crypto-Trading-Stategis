@@ -37,7 +37,7 @@ def backtest(df :pd.DataFrame,min_point:int,min_diff_point :int ,rounding_num:fl
 
                     if len(grp["price"])>= min_point:
 
-                        extrem_price = max(grp["price"]) if side == "resistances" else mix(grp["price"])
+                        extrem_price = max(grp["price"]) if side == "resistances" else min(grp["price"])
 
                         support_res[side].append({"price":extrem_price, "broken":False})
 
@@ -45,6 +45,28 @@ def backtest(df :pd.DataFrame,min_point:int,min_diff_point :int ,rounding_num:fl
 
             else:
                 price_group[side][row["rounded_" + h_l]] = {"price":[row[ h_l]] , "start_time":index,"last":index}
+
+            
+            # check whether price groups are still valide or not
+
+            for key,value in price_group[side].items():
+
+                if len(value["price"])>0:
+                    if side == "resistances" and row[h_l] > max(value["price"]):
+                        value["price"].clear()
+                        value["start_time"] = None
+                        value["last"] = None
+                    elif side == "supports" and row[h_l] < min(value["price"]):
+                        value["price"].clear()
+                        value["start_time"] = None
+                        value["last"] = None
+
+
+
+
+
+
+            
                 
 
 
